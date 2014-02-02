@@ -6,7 +6,7 @@
 #include "ruby.h"
 
 // Class methods
-VALUE rubyconf_say_hi(VALUE self, VALUE name);
+VALUE rubyconf_say_hi(int argc, VALUE *argv, VALUE self);
 VALUE rubyconf_get_array(VALUE self);
 VALUE rubyconf_get_hash(VALUE self);
 

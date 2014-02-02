@@ -4,8 +4,12 @@ describe RubyConf do
   subject { RubyConf.new }
 
   describe '#say_hi' do
-    it 'should return the correct value' do
+    it 'should return the correct value when passed a name' do
       expect( subject.say_hi('Thor') ).to eq("Hello, Thor!")
+    end
+
+    it 'should greet "World" without parameters' do
+      expect( subject.say_hi ).to eq("Hello, World!")
     end
 
     it 'should return an instance of String' do
